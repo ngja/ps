@@ -27,11 +27,21 @@ const int INF = 2'000'000'000;
 const ll LL_INF = 10'000'000'000LL;
 
 int main() {
-/*
-    ios_base :: sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-*/
+    int n;
+    while (cin >> n) {
+        int ans = 1;
+        int m = 1;
 
+        while (true) {
+            if (m % n == 0) {
+                cout << ans << "\n";
+                break;
+            }
+
+            ans++;
+            m = 10 * m + 1;
+            m = m % n;
+        }
+    }
     return 0;
 }
