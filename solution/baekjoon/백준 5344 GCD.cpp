@@ -26,8 +26,25 @@ const ll MOD = 1'000'000'007LL;
 const int INF = 2'000'000'000;
 const ll LL_INF = 10'000'000'000LL;
 
+int t;
+
+int gcd(int a, int b) {
+    if (b == 0) return a;
+    return gcd(b, a % b);
+}
+
 int main() {
     ios_base :: sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+
+    cin >> t;
+
+    while(t--) {
+        int num1, num2;
+        cin >> num1 >> num2;
+        cout << gcd(num1, num2) << "\n";
+    }
+
+    return 0;
 }
