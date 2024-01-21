@@ -3,8 +3,8 @@ package technic
 
 fun main() {
     // input
-    val (n, l, r) = readLine()!!.split(" ").map { it.toInt() }
-    val twoDimensionArray = Array(n) { readLine()!!.split(" ").map { it.toInt() }.toTypedArray() }
+    val (n, l, r) = readln().split(" ").map { it.toInt() }
+    val twoDimensionArray = Array(n) { readln().split(" ").map { it.toInt() }.toTypedArray() }
 
     // initialize
     val adj = Array(5) { mutableListOf<Int>() }
